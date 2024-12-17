@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Drawer</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Cart Open Button -->
+    <button id="cartToggle">Open Cart</button>
+
+    <!-- Cart Drawer -->
+    <div id="cartDrawer" class="cart-drawer">
+      <div class="cart-header">
+        <h2>YOUR BAG</h2>
+        <span><span id="itemCount">0</span> items</span> |
+        <span class="Rs">Rs <span id="headerCartTotal">0</span></span>
+        <button id="closeCart">X</button>
+      </div>
+
+      <!-- Progress Steps -->
+      <div class="progress-container">
+        <div class="step active">
+          <div class="circle">1</div>
+          <p>Free Shipping<br />Above Rs 1000</p>
+        </div>
+        <div class="progress-bar">
+          <div class="filled-bar" id="filledBar" style="width: 80%"></div>
+        </div>
+        <div class="step">
+          <div class="circle">2</div>
+          <p>10% Discount<br />Above Rs 2000</p>
+        </div>
+        <div class="progress-bar">
+          <div class="filled-bar" id="filledBar"></div>
+        </div>
+        <div class="step">
+          <div class="circle">3</div>
+          <p>20% Discount<br />Above Rs 4000</p>
+        </div>
+      </div>
+
+      <!-- Cart Items -->
+      <div class="cart-items" id="cartItems"></div>
+
+
+      <!-- Cart Footer -->
+      <div class="cart-footer">
+        <p>Total: ₹<span id="cartTotal">0</span></p>
+        <button class="checkout-button">Checkout</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
